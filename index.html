@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" > <!-- 自适应手机窗口 -->
+    <title>Bard: College of Spirits -- by钨鱼</title>
+    <link rel="shortcut icon" href='./graph/BG3_Class-Bard_small.ico'/><!--关于ico的报错 https://blog.csdn.net/pan_junbiao/article/details/94393648 -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- fontawesome icons -->
+</head>
+<body>
+
+<h1>本地网页端音乐播放程序</h1>
+
+<h3>很粗糙的说明：第一步点击“选择文件”，选中一个文件夹；第二步，选择“读取文件夹”，自动生成播放列表；第三步，点歌名播放，点下面播放键播放或暂停，拖进度条可以改进度。</h3>
+
+<div class="container_1">
+    <div class="row_1">
+        <input type="file" id="folderInput" webkitdirectory directory multiple class='item'/>
+    </div>
+    <div class="row_1">
+        <button onclick="readFiles()" class='item'>读取文件夹</button>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="container_1" id="music_list">
+    <div class="row_1">
+        <div class='item'>占位符-EVA</div>
+    </div>    
+</div>
+
+<br>
+<br>
+<br>
+
+
+
+<div class="bottom">
+    <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+    <div class="icons">
+        <!-- fontawesome icons --><!--  <i class="far fa-3x fa-play-circle" id="masterPlay"></i>-->
+        <img src=".\graph\music_player.png" width=10% alt="" id="masterPlay" class="text-center">        
+    </div>
+    <div class="songInfo">
+        <img src=".\graph\playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">something</span>
+    </div>
+</div>
+
+
+
+
+<div class='Bottom'>
+    <br>
+    <div>当前版本V1.0，界面烂的不行</div>
+    <div>
+        欢迎跳转
+        <a target="_blank" href="https://www.goddessfantasy.net/bbs/index.php?topic=153373.0">
+            果园的发布帖</a>
+        或是
+        <a target="_blank" href="https://github.com/TungsticFish/BardMusicPlayer_github/tree/main">
+            github的代码主页</a>
+        来写评论&提意见
+    </div>    
+    <div>by 钨鱼大磨蹭的业余时间</div>
+    <img src=".\graph\avatar.png" alt="钨鱼大磨蹭的头像"  width=30% >
+</div> 
+
+
+
+
+
+<script type='text/javascript' src="./js/script.js"></script>
+
+</body>
+</html>

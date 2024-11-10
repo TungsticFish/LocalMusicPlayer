@@ -1,0 +1,136 @@
+﻿* {
+
+}
+
+
+
+   
+
+
+
+/* 整体边框 */
+html {
+    margin: 50px;
+    font-size: 10px;
+}
+
+
+
+
+
+/*诗人本职*/
+.item {
+    flex:1;
+    font-size: 1em;
+    text-align: center;
+    background: SteelBlue;
+    color: white;
+    margin: 12px;
+    padding: 12px;
+    border: 1.5px solid black;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+
+.subclass_list {    
+    display: flex;
+    flex-direction: row;
+}
+
+.subclass {
+    border: 1.5px solid black;
+    margin: 6px;
+    padding: 6px;
+
+}
+
+
+
+
+/*精魂学院*/
+.Spirits_College { }
+/*创造学院*/
+.Creation_College { }
+/*逸闻学院*/
+.Lore_College { }
+/*页底*/
+.Bottom { }
+
+
+.roll_SpiritTales {   
+}
+.shake {
+    animation: shake 0.5s infinite;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-10px); }
+  20% { transform: translateX(10px); }
+  30% { transform: translateX(-10px); }
+  40% { transform: translateX(10px); }
+  50% { transform: translateX(-10px); }
+  60% { transform: translateX(10px); }
+  70% { transform: translateX(-10px); }
+  80% { transform: translateX(10px); }
+  90% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+.container_1 {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    justify-content: space-around;    
+}
+
+.row_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.item_Tale {
+    flex:1;
+    font-size: 1em;
+    text-align: center;
+    background: SteelBlue;
+    color: white;
+    margin: 12px;
+    padding: 12px;
+    border: 1.5px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+.bottom {
+    border: 2px solid black;
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* 
+.icons {
+    margin-top: 14px;
+}
+.icons i {
+    cursor: pointer;
+}
+*/
