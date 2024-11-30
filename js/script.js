@@ -18,9 +18,12 @@ function readFiles() {
         file_list.innerHTML=file.name;        
         file_list.id=URL.createObjectURL(file)
         file_list.onclick= function () {
-            //console.log(URL.createObjectURL(file))
+            console.log(file.name)
             audioElement.src = this['id'];    
 	        audioElement.play();
+            masterSongName.innerText = this.innerText;
+            masterSongName.classlist.add("SongName")
+
         }
 
         //监测是否是音频，只添加音频
@@ -71,7 +74,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
         audioElement.src = `songs/${songIndex+1}.mp3`;
-        masterSongName.innerText = songs[songIndex].songName;
+        //masterSongName.innerText = songs[songIndex].songName;
         audioElement.currentTime = 0;
         audioElement.play();
         gif.style.opacity = 1;
