@@ -18,7 +18,7 @@ function readFiles() {
         file_list.innerHTML=file.name;        
         file_list.id=URL.createObjectURL(file)
         file_list.onclick= function () {
-            console.log(file.name)
+            //console.log(file.name)
             audioElement.src = this['id'];
             audioElement.play();
             masterSongName.innerHTML = this.innerText;
