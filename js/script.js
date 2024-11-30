@@ -1,4 +1,4 @@
-// JavaScript source code
+ï»¿// JavaScript source code
 
 
 
@@ -12,7 +12,7 @@ function readFiles() {
 
     for (var i = 0; i < fileList.length; i++) {        
         var file = fileList[i];
-        var file_list = document.createElement("button");//¸øÔªËØÌí¼ÓÊôĞÔ
+        var file_list = document.createElement("button");//ç»™å…ƒç´ æ·»åŠ å±æ€§
         file_list.classList.add("row_1");
         file_list.classList.add("item");
         file_list.innerHTML=file.name;        
@@ -23,7 +23,7 @@ function readFiles() {
 	        audioElement.play();
         }
 
-        //¼à²âÊÇ·ñÊÇÒôÆµ£¬Ö»Ìí¼ÓÒôÆµ
+        //ç›‘æµ‹æ˜¯å¦æ˜¯éŸ³é¢‘ï¼Œåªæ·»åŠ éŸ³é¢‘
         if (file.type.match('audio.*')) {
             document.getElementById("music_list").appendChild(file_list);
         }
@@ -35,7 +35,7 @@ function readFiles() {
 
 
 
-//ĞÂ²¥·Å
+//æ–°æ’­æ”¾
 let audioElement = new Audio('assets/EVA.mp3');
 let masterPlay = document.getElementById('masterPlay');
 // Handle play/pause click
@@ -80,10 +80,5 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
     })
 })
 
-
-//°ó¶¨ÔªËØ const Bard_1 = document.getElementById('Bard_1');
-
-
-///Ìí¼Óº¯ÊıÏìÓ¦ Bard_1.addEventListener('click', PlayMusic)
 
 
