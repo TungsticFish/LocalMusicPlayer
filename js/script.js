@@ -21,9 +21,7 @@ function readFiles() {
             console.log(file.name)
             audioElement.src = this['id'];    
 	        audioElement.play();
-            masterSongName.innerText = this.innerText;
-            masterSongName.classlist.add("SongName")
-
+            masterSongName.innerHTML = this.innerText;
         }
 
         //监测是否是音频，只添加音频
